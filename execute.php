@@ -2,8 +2,8 @@
 function getWatsonResponse($p_input_text,$numChat)
  {
    // Prelevo i dati dalla pagina
-   //$contenuto = file_get_contents("http://smartweatherstation.altervista.org/ottienijson.php?chatId=$chatId");
-   $dh = curl_init("http://smartweatherstation.altervista.org/ottienijson?chatId=$numChat"); // such as http://example.com/example.xml
+   //$contenuto = file_get_contents("INSERT YOUR URL");
+   $dh = curl_init("INSERT YOUR URL"); 
    curl_setopt($dh, CURLOPT_RETURNTRANSFER, true);
    curl_setopt($dh, CURLOPT_HEADER, 0);
    $contenuto = curl_exec($dh);
@@ -32,9 +32,9 @@ function getWatsonResponse($p_input_text,$numChat)
    //
    // COLLEGAMENTO CON IBM WATSON
    //
-   $watson_username = "da17d77f-1428-4efd-b1a1-f088e908e392";
-   $watson_password = "ZyxLk7Al5kVS";
-   $watson_workspace_id = "3417a14f-16be-4568-aa93-04bf8b998f90";
+   $watson_username = "WATSON USERNAME";
+   $watson_password = "WATSON PASSWORD";
+   $watson_workspace_id = "WATSON WORKSPACE";
 
    $api_url = "https://gateway.watsonplatform.net/assistant/api/v1/workspaces/" . $watson_workspace_id . "/message?version=2018-07-10";
 
