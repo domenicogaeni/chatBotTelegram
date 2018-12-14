@@ -1,11 +1,5 @@
 <?php
-
-  // $servername = "localhost";
-  // $username = "root";
-  // $pwd_db="";
-  // $database = "stazione";
-  // $conn = new mysqli($servername, $username, $pwd_db,$database);
-
+	//NUOVA BRANCH
   $servername = "localhost";
   $username = "smartweatherstation";
   $password = "";
